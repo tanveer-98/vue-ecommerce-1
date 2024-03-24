@@ -1,4 +1,9 @@
-import { createApp } from 'vue'
-import App from './App.vue'
+const app = Vue.createApp({
+    data : function(){
+        return {
+            courseGoal : "Finish the course and learn Vue !"
+        }; // always returns object
+    }
+});
 
-createApp(App).mount('#app')
+app.mount('#user-goal');
